@@ -1,0 +1,118 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dog" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/cat" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/rabbit" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/horse" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="평이나 면적을 입력해주세요!"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/input1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_700"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="25dp"
+                    android:inputType="numberSigned"
+                    >
+
+                </EditText>
+
+                <TextView
+                    android:id="@+id/result"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="계산 결과가 없습니다."
+                    android:textSize="25dp"
+                    >
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/convert1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="평을 제곱 미터로 변환"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#03A9F4"
+                    android:textSize="20dp"
+                    >
+
+                </Button>
+                <Button
+                    android:id="@+id/convert2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="제곱 미터를 평으로 변환"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#8BC34A"
+                    android:textSize="20dp"
+                    >
+
+                </Button>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F000" >
+        </TabWidget>
+    </LinearLayout>
+
+</TabHost>
